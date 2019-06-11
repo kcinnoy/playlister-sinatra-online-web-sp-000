@@ -4,7 +4,7 @@ begin
   fi_check_migration
 
   use Rack::MethodOverride
-  
+
   use SongsController
   use ArtistsController
   use GenresController
