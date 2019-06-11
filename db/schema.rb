@@ -12,24 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2019_06_11_115553) do
 
-
   create_table "artists", force: :cascade do |t|
     t.text "name"
-    t.integer "genre_id"
-  end
-
-  create_table "genres", force: :cascade do |t|
-    t.text "name"
-  end
-
-  create_table "song_genres", force: :cascade do |t|
-    t.integer "song_id"
-    t.integer "genre_id"
-  end
-
-  create_table "songs", force: :cascade do |t|
-    t.text "name"
-    t.integer "artist_id"
   end
 
 end
