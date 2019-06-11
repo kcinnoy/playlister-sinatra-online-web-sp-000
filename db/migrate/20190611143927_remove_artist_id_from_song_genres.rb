@@ -1,4 +1,5 @@
 class RemoveArtistIdFromSongGenres < ActiveRecord::Migration[5.2]
   def change
-  end
+   remove_column :song_genres, :artist_id
+ end
 end
